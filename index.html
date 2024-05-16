@@ -9,27 +9,105 @@
             align-items: center;
             flex-wrap: wrap;
             margin-top: 20px;
+        }
+        h1{
             text-align: center;
         }
         .card{
             height: 200px;
             width: 400px;
-            background-color: aqua;
+            background-color:#e6e6e6;
             margin: 30px;
+            border-radius: 15px;
         }
+       .img{
+        height: 50px;
+        width: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        margin-top: 20px;
+       }
+       .text{
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+       }
+       @media screen and (max-width:600px) {
+
+        
+       }
+       @media screen and (min-width:601px) and (max-width:768px){
+
+       }
+       @media screen and (min-width:769px) and (max-width:1152px){
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card{
+            height: 200px;
+            width: 300px;
+            background-color:#e6e6e6;
+            margin: 30px;
+            border-radius: 15px;
+        }
+
+
+       }
+       @media screen and (min-width:1153px) and (max-width:1285px){
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card{
+            height: 200px;
+            width: 500px;
+            background-color:#e6e6e6;
+            margin: 30px;
+            border-radius: 15px;
+        }
+
+}
+
+
     </style>
 </head>
 <body>
     <h1>Our unique features..</h1>
     <div class="container">
         <div class="card">
+            <img src="price.png" class="img"><br/>
+            <span class="text" >
+            <b>Affordable Pricing :</b>
+             We have an amazing range of products with the most affordable prices and discounts.The costs are low as 
+            compared to current market rates.
+           </span>
 
         </div>
         <div class="card">
-
+            <img src="delivery.png" class="img"><br/>
+            <span class="text" >
+            <b>Free Home Delivery :</b> We give the service of home delivery absolutely for free to our all the customers.
+           </span>
         </div>
         <div class="card">
-
+            <img src="ret.png" class="img"><br/>
+            <span class="text" >
+            <b> Easy Return Policy : </b>
+           The return policy in case of item breakage or any other issues is very easy and customer friendly.
+            </span>
         </div>
     </div>
 </body>
